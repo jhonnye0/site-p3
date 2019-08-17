@@ -8,7 +8,7 @@ module.exports = {
         const userExists = await User.findOne({ username })
 
         if(userExists){
-            return res.json(userExists);
+            return res.json(userExists).alert('User already exists');
         }
 
         const response = await axios.get(`https://api.github.com/users/${username}`);

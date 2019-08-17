@@ -1,0 +1,53 @@
+.Logo{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #71d679;
+}
+
+.main-container{
+    color: #71d679;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.main-container ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 50px;
+}
+
+.main-container ul li{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-container ul li img{
+    max-width: 100%;
+}
+
+.main-container ul li footer{
+    flex: 1;
+}
+
+.Logo button{
+    margin-top: 5px;
+    border: 1px solid #71d679;
+    border-radius: 4px;
+    height: 30px;
+    width: 65px;
+    font-size: 15px;
+    background: black;
+    color: #71d679;
+    font-weight: bold; 
+}
+
+.Logo button:hover{
+    cursor: pointer;
+    color: #0c9717;
+    border: 1px solid #0c9717;
+}
