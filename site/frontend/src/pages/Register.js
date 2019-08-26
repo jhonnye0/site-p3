@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Register.css'
+import './css/Register.css'
 import logo from "../assets/logo.jpg"
 import api from '../services/api';
 
@@ -14,9 +14,17 @@ export default function Register({history}){
 
     async function handleSubmit(e){
         e.preventDefault();
+        const response = await api.post('/user', 
+        {
+            username, 
+            password, 
+            bio, 
+            type, 
+            value
+        });
 
-        const response = await api.post('/user', {username, password, bio, type, value}, {withCredentials: true});
-        history.push('/main');
+        if(response)
+            history.push(`/user/${response.data._id}`);
     }
 
     function back(e){
@@ -40,11 +48,12 @@ export default function Register({history}){
                     value={password}
                     onChange={e => setPassword(e.target.value)}
                 />
-                <input 
-                    placeholder="Type(Assassin or User)"
-                    value={type} 
-                    onChange={e => setType(e.target.value)}
-                />
+                <select onChange={e => setType(e.target.value)}>
+                    <option value="" disabled selected>Select</option>
+                    <option value="Assassin">Assassin</option>
+                    <option value="User">User</option>
+                </select>
+
                 <input 
                     placeholder="Bio"
                     value={bio} 

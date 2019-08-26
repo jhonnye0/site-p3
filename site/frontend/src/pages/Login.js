@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import logo from "../assets/logo.jpg"
-import './Login.css';
-
+import './css/Login.css';
 import api from '../services/api';
 
 export default function Login({ history }){
+
+    const [user, setUser] = useState({});
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
@@ -13,19 +14,27 @@ export default function Login({ history }){
         history.push('/register');
     }
 
-    async function login(e){
+    async function toLog(e){
         e.preventDefault();
 
-        if(await api.post('/login', {username, password})){
-            history.push('/main');
-        }else{
-            history.push('/');
+        const response = await api.post('/login', {
+            username,
+            password
+        });
+
+        setUser(user);
+
+        if(response.data !== null){
+            const { _id } = response.data;
+            history.push(`/user/${_id}`);
         }
+        else
+            history.push('/');            
     }
 
     return(
         <div className="login-container">
-            <form onSubmit={login}>
+            <form onSubmit={toLog}>
                 <img src={logo} alt="KillNow"/>
                 <input 
                     placeholder="username"
