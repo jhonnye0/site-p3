@@ -1,4 +1,4 @@
-# SiteP3
+# # SiteP3
 
 Esse site possibilita a intermediação entre contrato de serviços de assassinatos de aluguel.
 
@@ -7,7 +7,7 @@ Os usuários não são listados por motivos de segurança.
 
 Registre-se na aba de registro com o seu username do github. (se não possuir pega o de alguém de lá);
 
-As operações possíveis são as seguintes:
+# As operações possíveis são as seguintes:
 
 - Adcionar Usuário ou Assassino;
 - Fazer um Update das suas informações, podendo até mesmo transferir de User para Assassin;
