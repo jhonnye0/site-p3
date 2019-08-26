@@ -9,6 +9,8 @@ Registre-se na aba de registro com o seu username do github. (se não possuir pe
 
 O login é efetuado com o seu username e sua password.
 
+(Existe uma conta username: admin, password: admin; Para visualização)
+
 # As operações possíveis são as seguintes:
 
 - Adcionar Usuário ou Assassino;
