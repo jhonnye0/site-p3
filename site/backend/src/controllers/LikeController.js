@@ -10,16 +10,14 @@ module.exports = {
         const targetUser = await User.findById(userId);
 
         if(!targetUser){
-            return res.status(400).json({ error: 'User not found' });
+            res.status(400).json({ error: 'User not found' });
         }
-        
-       res.json({ number : targetUser.likes.length });
         
         if(!targetUser.likes.includes(loggedUser._id)){
             targetUser.likes.push(loggedUser._id);
             await targetUser.save();
         }
-
+        
         return res.json(targetUser);
     }
 };

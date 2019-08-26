@@ -5,21 +5,21 @@ module.exports = {
     async store(req, res){
 
         const { user, value, description } = req.headers;
-        const { userId } = req.params;
+        const { id } = req.params;
 
-        const hitman = await User.findById(userId);
+        const hitman = await User.findById(id);
 
         if(!hitman){
-            return res.status(400).json({ error: 'User not found' });
+            res.status(400).json({ error: 'User not found' });
         }
 
         const contract = await Contract.create({
             value,
             description,
             buyer: user,
-            hitman: userId
+            hitman: id
         });
 
-        return res.json(contract);
+        res.json(contract);
     }
 };
