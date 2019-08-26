@@ -1,0 +1,75 @@
+.update-container form img{
+    max-width: 200px;
+}
+
+#back-btn{
+    margin-bottom: 10px;
+}
+
+.update-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.update-container form {
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.update-container form input{
+    background: rgb(109, 108, 108); 
+    margin-top: 3px;
+    border: 2px solid #71d679;
+    border-radius: 8px;
+    height: 30px; 
+    padding:0 20px;
+    font-size: 15px;
+}
+
+.update-container form select {
+
+    margin-top: 3px;
+    border: 2px solid #71d679;
+    border-radius: 8px;
+    height: 30px; 
+    padding:0 20px;
+    font-size: 15px;
+    background-color: rgb(119, 118, 118);
+    color: #66cf79;
+}
+
+.update-container form strong{
+    color: #24f049;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.update-container form input::placeholder{
+    color: #71d679;
+}
+
+.update-container form button{
+    margin-top: 5px;
+    border: 1px solid #71d679;
+    border-radius: 4px;
+    height: 30px;
+    font-size: 15px;
+    background: black;
+    color: #71d679;
+    font-weight: bold; 
+}
+
+.update-container form button:hover{
+    cursor: pointer;
+    color: #0c9717;
+    border: 1px solid #0c9717;
+}
+
+.update-container form #btn-back-update{
+    margin-bottom: 10px
+}

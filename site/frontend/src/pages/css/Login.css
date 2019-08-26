@@ -1,0 +1,44 @@
+.login-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container form {
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container form input {
+    background: rgb(109, 108, 108);
+    margin-top: 3px;
+    border: 2px solid #71d679;
+    border-radius: 8px;
+    height: 30px; 
+    padding:0 20px;
+    font-size: 15px;
+}
+
+.login-container form input::placeholder{
+    color: #71d679;
+}
+
+.login-container form button{
+    margin-top: 5px;
+    border: 1px solid #71d679;
+    border-radius: 4px;
+    height: 30px;
+    font-size: 15px;
+    background: black;
+    color: #71d679;
+    font-weight: bold; 
+}
+
+.login-container form button:hover{
+    cursor: pointer;
+    color: #0c9717;
+    border: 1px solid #0c9717;
+}
