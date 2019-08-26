@@ -14,19 +14,19 @@ As operações possíveis são as seguintes:
 - Dar likes no Assassino de sua preferência
 - Estabelecer contratos entre o User e um Assassin;
 
-As seguintes informações são obrigatórias:
+# As seguintes informações são obrigatórias:
 
-* No registro:
+$ No registro:
 
 - username (github)
 - password (a seu critério)
 - type (Assassin ou User)
 - avatar (o mesmo é coletado no seu github)
 
-* E no contrato:
+$ E no contrato:
 
 - value
 - buyer (este é coletado no seu login)
 - hitman (e este é coletado ao selecionar algum dos Assassins)
 
-* No Update das informações
+$ No Update das informações
