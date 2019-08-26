@@ -7,6 +7,8 @@ Os usuários não são listados por motivos de segurança.
 
 Registre-se na aba de registro com o seu username do github. (se não possuir pega o de alguém de lá);
 
+O login é efetuado com o seu username e sua password.
+
 # As operações possíveis são as seguintes:
 
 - Adcionar Usuário ou Assassino;
@@ -32,3 +34,7 @@ E no contrato:
 No Update das informações:
 
 - Nenhuma, você pode voltar e não alterar nada.
+
+E por fim, 
+
+  Obrigado! :)
