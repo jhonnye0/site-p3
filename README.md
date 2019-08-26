@@ -16,17 +16,19 @@ Registre-se na aba de registro com o seu username do github. (se não possuir pe
 
 # As seguintes informações são obrigatórias:
 
-$ No registro:
+No registro:
 
 - username (github)
 - password (a seu critério)
 - type (Assassin ou User)
 - avatar (o mesmo é coletado no seu github)
 
-$ E no contrato:
+E no contrato:
 
 - value
 - buyer (este é coletado no seu login)
 - hitman (e este é coletado ao selecionar algum dos Assassins)
 
-$ No Update das informações
+No Update das informações:
+
+- Nenhuma, você pode voltar e não alterar nada.
