@@ -13,10 +13,10 @@ O login é efetuado com o seu username e sua password.
 
 # As operações possíveis são as seguintes:
 
-- Adcionar Usuário ou Assassino;
-- Fazer um Update das suas informações, podendo até mesmo transferir de User para Assassin;
+- Adcionar Usuário;
+- Fazer um Update das suas informações, podendo até mesmo transferir de User;
 - Dar likes no Assassino de sua preferência
-- Estabelecer contratos entre o User e um Assassin;
+- Estabelecer contratos entre o User;
 
 # As seguintes informações são obrigatórias:
 
@@ -24,7 +24,7 @@ No registro:
 
 - username (github)
 - password (a seu critério)
-- type (Assassin ou User)
+- type
 - avatar (o mesmo é coletado no seu github)
 
 E no contrato:
